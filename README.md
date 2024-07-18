@@ -34,46 +34,48 @@ Gmail Cleaner is a Python app with a Tkinter GUI for managing Gmail. Users can a
    python gmail_cleaner.py
    ```
 
+
 ## Usage
-Launch the application:
 
-bash
-Copy code
-python gmail_cleaner.py
-Authenticate with your Gmail account:
+1. **Launch the application:**
+   ```bash
+   python gmail_cleaner.py
+   ```
 
-Click on the "Authenticate Credentials" button.
-A file dialog will open. Select your credentials JSON file (usually named credentials.json).
-Follow the prompts to authenticate with your Google account.
-Once authenticated, the app will save a token.json file for future use.
-Optionally, load an existing token directly:
+2. **Authenticate with your Gmail account:**
+   - Click on the "Authenticate Credentials" button.
+   - A file dialog will open. Select your credentials JSON file (usually named `credentials.json`).
+   - Follow the prompts to authenticate with your Google account.
+   - Once authenticated, the app will save a `token.json` file for future use.
 
-If you have previously authenticated and have a token.json file, you can use it directly.
-Click on the "Or Load Token Directly" button.
-A file dialog will open. Select your token.json file.
-Enter the desired criteria for deleting emails:
+3. **Optionally, load an existing token directly:**
+   - If you have previously authenticated and have a `token.json` file, you can use it directly.
+   - Click on the "Or Load Token Directly" button.
+   - A file dialog will open. Select your `token.json` file.
 
-Search Subject (optional): Enter a subject to search for specific emails.
-From Email ID: Enter the full email address of the sender whose emails you want to delete.
-From Email Filter: Enter a partial email address or domain to filter emails from certain senders.
-Delete Emails Before Date (YYYY/MM/DD): Enter a date to delete emails before this date. Ensure the format is YYYY/MM/DD.
-Delete emails based on the criteria provided:
+4. **Enter the desired criteria for deleting emails:**
+   - **Search Subject (optional):** Enter a subject to search for specific emails.
+   - **From Email ID:** Enter the full email address of the sender whose emails you want to delete.
+   - **From Email Filter:** Enter a partial email address or domain to filter emails from certain senders.
+   - **Delete Emails Before Date (YYYY/MM/DD):** Enter a date to delete emails before this date. Ensure the format is YYYY/MM/DD.
 
-Click on the "Delete Emails" button.
-The application will search for emails matching the criteria and prompt you for confirmation before deletion.
-Once confirmed, it will start deleting the emails in batches, displaying the progress in the text area.
-Alternatively, clear emails from specific categories:
+5. **Delete emails based on the criteria provided:**
+   - Click on the "Delete Emails" button.
+   - The application will search for emails matching the criteria and prompt you for confirmation before deletion.
+   - Once confirmed, it will start deleting the emails in batches, displaying the progress in the text area.
 
-Clear Promotions:
-Click on the "Clear Promotions" button.
-The application will search for emails in the Promotions category and prompt you for confirmation before deletion.
-Clear Social:
-Click on the "Clear Social" button.
-The application will search for emails in the Social category and prompt you for confirmation before deletion.
-Monitor the deletion process:
+6. **Alternatively, clear emails from specific categories:**
+   - **Clear Promotions:**
+     - Click on the "Clear Promotions" button.
+     - The application will search for emails in the Promotions category and prompt you for confirmation before deletion.
+   - **Clear Social:**
+     - Click on the "Clear Social" button.
+     - The application will search for emails in the Social category and prompt you for confirmation before deletion.
 
-The text area at the bottom of the application will display status updates during the deletion process.
-If the rate limit is exceeded, the application will automatically pause and retry.
+7. **Monitor the deletion process:**
+   - The text area at the bottom of the application will display status updates during the deletion process.
+   - If the rate limit is exceeded, the application will automatically pause and retry.
+```
 
 ## Requirements
 
