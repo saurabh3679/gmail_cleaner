@@ -35,21 +35,45 @@ Gmail Cleaner is a Python app with a Tkinter GUI for managing Gmail. Users can a
    ```
 
 ## Usage
+Launch the application:
 
-1. Launch the application:
-   ```bash
-   python gmail_cleaner.py
-   ```
+bash
+Copy code
+python gmail_cleaner.py
+Authenticate with your Gmail account:
 
-2. Authenticate with your Gmail account by selecting the credentials JSON file.
+Click on the "Authenticate Credentials" button.
+A file dialog will open. Select your credentials JSON file (usually named credentials.json).
+Follow the prompts to authenticate with your Google account.
+Once authenticated, the app will save a token.json file for future use.
+Optionally, load an existing token directly:
 
-3. Optionally, load an existing token JSON file directly.
+If you have previously authenticated and have a token.json file, you can use it directly.
+Click on the "Or Load Token Directly" button.
+A file dialog will open. Select your token.json file.
+Enter the desired criteria for deleting emails:
 
-4. Enter the desired criteria for deleting emails (subject, sender email ID, sender email filter, date before which emails should be deleted).
+Search Subject (optional): Enter a subject to search for specific emails.
+From Email ID: Enter the full email address of the sender whose emails you want to delete.
+From Email Filter: Enter a partial email address or domain to filter emails from certain senders.
+Delete Emails Before Date (YYYY/MM/DD): Enter a date to delete emails before this date. Ensure the format is YYYY/MM/DD.
+Delete emails based on the criteria provided:
 
-5. Click on "Delete Emails" to delete emails based on the criteria provided.
+Click on the "Delete Emails" button.
+The application will search for emails matching the criteria and prompt you for confirmation before deletion.
+Once confirmed, it will start deleting the emails in batches, displaying the progress in the text area.
+Alternatively, clear emails from specific categories:
 
-6. Alternatively, click on "Clear Promotions" or "Clear Social" to delete emails from the Promotions or Social categories, respectively.
+Clear Promotions:
+Click on the "Clear Promotions" button.
+The application will search for emails in the Promotions category and prompt you for confirmation before deletion.
+Clear Social:
+Click on the "Clear Social" button.
+The application will search for emails in the Social category and prompt you for confirmation before deletion.
+Monitor the deletion process:
+
+The text area at the bottom of the application will display status updates during the deletion process.
+If the rate limit is exceeded, the application will automatically pause and retry.
 
 ## Requirements
 
